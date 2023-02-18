@@ -5,5 +5,5 @@ os: Visual Studio 2022
 build: off
 
 test_script:
-    - python -m unittest ./sample_code
+    - python -m unittest discover -s ./sample_code -p test_*.py
     
