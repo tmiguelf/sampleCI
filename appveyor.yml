@@ -1,0 +1,9 @@
+version: '{build}-{branch}'
+
+os: Visual Studio 2022 Preview
+
+build: off
+
+test_script:
+    - python -m unittest ./sample_code
+    
