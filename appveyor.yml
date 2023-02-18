@@ -4,6 +4,12 @@ os: Visual Studio 2022
 
 build: off
 
+install:
+    - python -m pip install --upgrade pip
+    - pip3 install coverage
+    
+
 test_script:
-    - python -m unittest discover -s ./sample_code -p test_*.py
+    - python -m coverage run -m unittest discover -s ./sample_code -p test_*.py
+    - python -m coverage report
     
